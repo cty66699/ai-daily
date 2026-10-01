@@ -1,0 +1,4 @@
+feeds/
+extracted.json
+node_modules/
+*.log
