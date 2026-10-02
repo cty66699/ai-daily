@@ -201,3 +201,56 @@ footer {
   font-family: var(--mono);
   letter-spacing: .3px;
 }
+
+/* 条目配图 */
+.item .item-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 12px 0 0;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #060a13;
+}
+.item .img-cap {
+  font-size: 11.5px;
+  color: var(--muted);
+  font-family: var(--mono);
+  margin-top: 5px;
+  letter-spacing: .3px;
+}
+
+/* 网友热议 */
+.comments {
+  margin-top: 13px;
+  border-top: 1px dashed var(--line);
+  padding-top: 11px;
+}
+.comments .c-lab {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 1.5px;
+  color: var(--purple);
+  margin-bottom: 8px;
+}
+.comments .c-item {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #b3c0d2;
+  margin: 0 0 7px;
+  padding-left: 10px;
+  border-left: 2px solid rgba(167,139,250,.38);
+}
+.comments .c-by {
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  margin-right: 7px;
+}
+.comments .c-src {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 11.5px;
+  font-family: var(--mono);
+}

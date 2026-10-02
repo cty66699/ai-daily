@@ -1,4 +1,5 @@
 feeds/
 extracted.json
+.tmpimg/
 node_modules/
 *.log
