@@ -71,7 +71,7 @@
     "训练": "用海量数据「教会」模型的过程",
     "微调": "在已有大模型上做小规模再训练",
     "多模态": "能同时处理文字、图像、音频等多种信息",
-    "智能体": "能自主规划并执行多步任务的 AI（Agent）",
+    "智能体": "能自主规划并执行多步任务的 AI",
     "人形机器人": "外形像人的机器人",
     "自动驾驶": "车辆无需人工即可行驶的技术",
     "具身智能": "有实体、能感知并作用于物理世界的 AI",
@@ -91,7 +91,7 @@
 
   var esc = function (s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); };
   var re = new RegExp("(" + KW.map(esc).join("|") + ")", "gi");
-  var noted = {}; // 本页已注释过的术语（小写）
+  var noted = {}; // 本页已注释过的「注释文本」（同一说明只出现一次）
 
   function highlightText(node, allowNote) {
     var t = node.nodeValue;
@@ -107,12 +107,15 @@
       s.className = "kw";
       s.textContent = m[0];
       frag.appendChild(s);
-      if (allowNote && NOTES[key] && !noted[key]) {
-        noted[key] = 1;
-        var n = document.createElement("span");
-        n.className = "kw-note";
-        n.textContent = "（" + NOTES[key] + "）";
-        frag.appendChild(n);
+      if (allowNote && NOTES[key]) {
+        var noteText = NOTES[key];
+        if (!noted[noteText]) {
+          noted[noteText] = 1;
+          var n = document.createElement("span");
+          n.className = "kw-note";
+          n.textContent = "（" + noteText + "）";
+          frag.appendChild(n);
+        }
       }
       last = m.index + m[0].length;
     }
