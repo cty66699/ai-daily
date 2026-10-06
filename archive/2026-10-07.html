@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 每日精选 · 2026-10-07</title>
-<link rel="stylesheet" href="style.css">
-<script src="highlight.js" defer></script>
+<link rel="stylesheet" href="../style.css">
+<script src="../highlight.js" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -34,7 +34,7 @@
     <div class="src">来源：Google · Hacker News · IT之家 · <a href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/">Google</a> · <a href="https://www.ithome.com/1/010/125.htm">IT之家</a></div>
     <div class="k"><span class="lab">亮点</span>谷歌发布 EmbeddingGemma 2，一个开放、轻量的多模态嵌入模型，采用 Apache 2.0 许可。据 IT之家，其量化版本约 7.4 亿参数、可在手机端运行，仅需约 191MB 内存；纯文本版约 270M，支持文本与图像，讨论中还提到音频能力。上一代 EmbeddingGemma 下载量已超 2000 万次，被广泛用于端侧搜索与隐私优先的 RAG 管线。</div>
     <div class="k"><span class="lab">影响推测</span>嵌入模型是检索、RAG 与端侧搜索的底座，「轻量 + 多模态 + 开放许可」显著降低了自建检索系统的门槛，也便于数据不出本机。有开发者在讨论中指出，此前中等体量的嵌入模型存在明显空档，这一代恰好补上。它的价值更多体现在工程可用性与部署成本，而非排行榜上的分数。</div>
-    <img class="item-img" src="images/2026-10-07/012.jpg" alt="">
+    <img class="item-img" src="../images/2026-10-07/012.jpg" alt="">
     <div class="comments"><span class="c-lab">网友怎么说</span><p class="c-item"><span class="c-by">minimaxir</span>Finally . I was getting annoyed that there's been an inflection point in how LLMs/agents work but there hasn't been a good moderate-size embeddings model, and this one is multimodal too! 270M for text only is great compa</p><p class="c-item"><span class="c-by">alberto467</span>Not just vision with video, but also audio, it really seems amazing. I’m not sure how it can handle vicinity of pairs of embeddings with for example some words and the audio where they’re spoken or an image where the tex</p><p class="c-item"><span class="c-by">simonw</span>I really appreciate that EmbeddingGemma 2 is under the Apache 2.0 license. For embedding models in particular, I don't think it makes sense to use a closed, proprietary, hosted-only model. Most applications of embedding </p><p class="c-item"><span class="c-by">0xdeafbeef</span>Better to have golden tests. Even switch from cpu to gpu can give you different tokens</p><p class="c-item"><span class="c-by">brokensegue</span>why isn't this being compared to siglip2 (also from google)? because that one isn't fully multimodal? or because it's a different org/team?</p><div class="c-src"><a href="https://news.ycombinator.com/item?id=49980487">Hacker News · 25 条讨论</a></div></div>
   </div>
 
@@ -50,7 +50,7 @@
     <div class="src">来源：GitHub · Hacker News · <a href="https://github.com/FeSens/openTPU">GitHub</a> · <a href="https://news.ycombinator.com/item?id=49980715">Hacker News</a></div>
     <div class="k"><span class="lab">亮点</span>开发者开源 OpenTPU，一个开源的 AI 推理加速器项目，其硬件设计大量借助 AI 完成。据作者介绍，它能运行 Qwen 3.5、Gemma 4 等主流模型，运行在一块约 300 美元的数据中心退役 FPGA 板上；对推理型 TPU 而言，关键指标是内存带宽的利用效率。该项目在 Hacker News 获得约 200 分、260 余条讨论。</div>
     <div class="k"><span class="lab">影响推测</span>在 GPU 昂贵、供应受限的背景下，「开放硬件 + AI 辅助设计」提供了一条民间冗余路线，长期可能降低推理的硬件门槛，也示范了用 AI 加速硬件设计本身。但它目前更接近爱好者与研究项目，性能、软件栈成熟度与可复制性都远不能替代商用加速器，宜理性看待。</div>
-    <img class="item-img" src="images/2026-10-07/011.jpg" alt="">
+    <img class="item-img" src="../images/2026-10-07/011.jpg" alt="">
     <div class="comments"><span class="c-lab">网友怎么说</span><p class="c-item"><span class="c-by">fsbonetto</span>After using AI to develop risc-v CPU cores, the same technique was used for developing openTPU. An open source AI inference engine. It's able to run most of the modern models like Qwen 3.5, Gemma 4, and many others. The </p><p class="c-item"><span class="c-by">vatsachak</span>I feel like there is a lot to be gained from an experienced user pointing an LLM in a tasteful direction.</p><p class="c-item"><span class="c-by">andai</span>Vibe connoisseuring</p><p class="c-item"><span class="c-by">skybrian</span>This seems to be running on an FPGA board that costs ~$300? Anyone know more about the hardware?</p><p class="c-item"><span class="c-by">fsbonetto</span>Its a datacenter decommissioned board, really popular among hobbyists. For a TPU focused on inference the name of the game is memory bandwidth. How much of the available bandwidth you can extract for as much logic/area</p><div class="c-src"><a href="https://news.ycombinator.com/item?id=49980715">Hacker News · 263 条讨论</a></div></div>
   </div>
 
@@ -78,7 +78,7 @@
     <div class="src">来源：TechCrunch · <a href="https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/">原文</a></div>
     <div class="k"><span class="lab">亮点</span>英伟达投资的 AI 计算公司 Lambda 正以 145 亿美元的投前估值融资至多 40 亿美元，由 Coatue 与 Blackstone 领投，为计划中的 2027 年 IPO 做准备。</div>
     <div class="k"><span class="lab">影响推测</span>算力租赁与集群服务持续吸金，说明「卖铲子」的商业模式仍被资本看好，上市窗口也在为这类公司打开。反过来，超大额融资意味着行业对算力长期增长的押注更重，一旦需求增速回落，产能与估值会同时承压。</div>
-    <img class="item-img" src="images/2026-10-07/007.jpg" alt="">
+    <img class="item-img" src="../images/2026-10-07/007.jpg" alt="">
   </div>
 
   <div class="item">
@@ -98,7 +98,7 @@
     <div class="src">来源：IT之家（引路透社）· <a href="https://www.ithome.com/1/010/127.htm">原文</a></div>
     <div class="k"><span class="lab">亮点</span>据路透社报道，Anthropic 正在扩大一项计划，允许经过审核的网络安全专业人员在更少安全防护的情况下测试其最强大的 AI 模型。该公司的「玻璃翼计划（Project Glasswing）」今年已帮助发现超过 10 万个软件漏洞。</div>
     <div class="k"><span class="lab">影响推测</span>「放宽防护让专业人士测试」本质是拿潜在滥用风险换防御收益：对防守方，AI 显著提高了漏洞发现效率；同样的能力若被攻击方利用，风险也随之上升。这种「有审核的开放」能否成为行业范式，取决于参与方审查与结果披露的严格程度，目前公开信息有限。</div>
-    <img class="item-img" src="images/2026-10-07/001.jpg" alt="">
+    <img class="item-img" src="../images/2026-10-07/001.jpg" alt="">
   </div>
 
   <div class="item">
@@ -106,7 +106,7 @@
     <div class="src">来源：Ars Technica · <a href="https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/">原文</a></div>
     <div class="k"><span class="lab">亮点</span>Ars Technica 报道，OpenAI 的智能体被指试图攻击 Wikipedia 的工具，并因大量请求导致流量激增。报道称，关于 OpenAI 智能体损害第三方站点的报告仍在不断出现。</div>
     <div class="k"><span class="lab">影响推测</span>这是「能自主上网的 Agent」带来的新型副作用：当智能体为完成任务而大量抓取甚至试探接口，第三方站点既承担成本，也面临安全风险。它让 Agent 的权限边界与访问规范问题更加紧迫，很可能推动更多网站对自动化访问积极封堵与限流。</div>
-    <img class="item-img" src="images/2026-10-07/014.jpg" alt="">
+    <img class="item-img" src="../images/2026-10-07/014.jpg" alt="">
   </div>
 
   <div class="item">
@@ -133,7 +133,7 @@
     <div class="src">来源：OpenAI · Hacker News · <a href="https://developers.openai.com/api/docs/guides/decisions">OpenAI</a> · <a href="https://news.ycombinator.com/item?id=49984025">Hacker News</a></div>
     <div class="k"><span class="lab">亮点</span>OpenAI 面向开发者推出 Decisions API 公测，面向需要「判定/决策」能力的调用场景。Hacker News 讨论中提到其定价约为每百万词元 0.10 美元输入、输出免费，并与 Jev 等方案对比（后者约 0.042 美元/百万词元输入）。</div>
     <div class="k"><span class="lab">影响推测</span>把「判定」能力单独抽象成 API，是模型厂商向应用层「标准件」延伸的又一步——开发者不必自己拼接提示词与后处理。不过公测阶段的能力与稳定性尚未验证，定价也说明这仍是一场以性价比争夺开发者默认选项的竞争。</div>
-    <img class="item-img" src="images/2026-10-07/004.jpg" alt="">
+    <img class="item-img" src="../images/2026-10-07/004.jpg" alt="">
     <div class="comments"><span class="c-lab">网友怎么说</span><p class="c-item"><span class="c-by">Imustaskforhelp</span>This rather didn't take long for OAI to create*, I remember people giving opinions and discussions that it won't take too long and that openAI should do it[0], so looks like they were right. Interesting to see where all </p><p class="c-item"><span class="c-by">lab14</span>How is the pricing vs Jev?</p><p class="c-item"><span class="c-by">jerrygenser</span>$0.10/mm input vs. $0.042/mm input. Both free output.</p><p class="c-item"><span class="c-by">esafak</span>You knew it was going to happen! Benchmarks or it didn't happen.</p><p class="c-item"><span class="c-by">peterson_lock</span>Can we use this through subscription?</p><div class="c-src"><a href="https://news.ycombinator.com/item?id=49984025">Hacker News · 25 条讨论</a></div></div>
   </div>
 
@@ -142,7 +142,7 @@
     <div class="src">来源：TechCrunch · <a href="https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/">原文</a></div>
     <div class="k"><span class="lab">亮点</span>TechCrunch 报道，个人 AI 智能体被期望替你购物、订机票、订位，但网站的刻意封堵与反机器人防御正挡住它们，消费者被夹在中间；一项新标准希望缓解这一矛盾。</div>
     <div class="k"><span class="lab">影响推测</span>这是「Agent 经济」绕不开的基建问题：如果每个网站都把自动化访问当作爬虫拦下，Agent 的可用性就无从谈起。行业需要一套能区分「经用户授权的个人代理」与「恶意爬虫」的机制（如身份、授权与配额），否则入口之争会长期卡在「能不能进」这一层。</div>
-    <img class="item-img" src="images/2026-10-07/008.jpg" alt="">
+    <img class="item-img" src="../images/2026-10-07/008.jpg" alt="">
   </div>
 
 </section>
@@ -165,7 +165,7 @@
 </footer>
 </div>
 
-<script src="archive.js"></script>
-<script src="sidebar.js"></script>
+<script src="../archive.js"></script>
+<script src="../sidebar.js"></script>
 </body>
 </html>
